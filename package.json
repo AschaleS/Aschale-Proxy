@@ -1,0 +1,23 @@
+{
+  "name": "steven-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zheng-Yi-Sao/Steven-Proxy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zheng-Yi-Sao/Steven-Proxy/issues"
+  },
+  "homepage": "https://github.com/Zheng-Yi-Sao/Steven-Proxy#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
