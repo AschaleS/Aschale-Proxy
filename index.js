@@ -4,15 +4,17 @@ const port = 5000;
 const path = require('path');
 const request = require('request');
 
-app.use(express.static(path.join(__dirname, '/public'), {index: false}));
+app.use(express.static(path.join(__dirname, '/public')));
 
-app.get('/', (req, res) => {
+/*app.get('/', (req, res) => {
   res.redirect('./dp/1');
-});
+});*/
 
 const sendIndex = (req, res) => {
   res.sendFile(path.join(__dirname, './public/index.html'));
 };
+
+app.get('/:productId', sendIndex);
 
 app.get('*/dp/:productId', sendIndex);
 
