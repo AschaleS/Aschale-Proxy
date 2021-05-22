@@ -72,3 +72,8 @@ header {
 .left-col {
 	width: 25%;
 }
+
+/* !!! Temporary fix !!! */
+img.review-username_image {
+  background-image: url(http://localhost:3004/user_image.png)
+}
