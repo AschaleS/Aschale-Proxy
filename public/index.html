@@ -5,13 +5,30 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
 integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
 crossorigin="anonymous">
-
+  <link rel="stylesheet" type="text/css" href="http://localhost:3002/stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="/styles.css">
 </head>
 <body>
-  <div id="Gallery"></div>
-  <div id="product-overview"></div>
-  <div id="information"></div>
-  <div id="reviews"></div>
+  <header id="navbar">
+    <nav id="top-nav">
+      <div class="nav-logo nav-sprite"></div>
+    </nav>
+    <nav id="categories"></nav>
+  </header>
+  <div id="main">
+    <div id="category">
+      <a href="#">Movies & TV</a> >
+      <a href="#">Movies</a>
+    </div>
+    <div id="overview">
+      <div class="left-col">
+        <div id="Gallery"></div>
+      </div>
+      <div id="product-overview"></div>
+    </div>
+    <div id="information"></div>
+    <div id="reviews"></div>
+  </div>
   <script src="http://localhost:3001/information.js"></script>
   <script src="http://localhost:3002/overview.js"></script>
   <script src="http://localhost:3003/gallery.js"></script>

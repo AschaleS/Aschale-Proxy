@@ -1,0 +1,74 @@
+header {
+  display: flex;
+}
+
+#top-nav {
+  height: 60px;
+  width: 100%;
+  background-color: #131921;
+  padding: 10px;
+}
+
+.nav-sprite.nav-logo {
+  background-position: -10px -51px;
+  width: 97px;
+  height: 30px;
+  margin: 5px
+}
+
+.nav-sprite {
+  background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png);
+  background-position: 0 1000px;
+  background-repeat: repeat-x;
+}
+
+#main {
+	width: 80vw;
+	margin: auto;
+  margin-top: 64px;
+	display: flex;
+	flex-flow: column;
+  min-width: 1000px;
+  max-width: 1500px;
+}
+
+#overview {
+  display: flex;
+  flex-flow: row;
+}
+
+#category {
+  margin-left: 8px;
+  color: #666;
+  position: absolute;
+  margin-top: -32px;
+}
+
+#product-overview .container .row .col-md-6 {
+  max-width: calc(100% - 270px);
+  flex-grow: 1;
+}
+
+#product-overview .container .row .col-md-3 {
+  max-width: 270px;
+  height: 100%;
+}
+
+.cart {
+  padding-left: 18px;
+  padding-right: 18px;
+  border-radius: 8px;
+  width: 270px;
+  border: 1px solid #007185;
+}
+
+#category a {
+  color: #666;
+}
+.product-overview::before {
+	padding-left: 8px;
+}
+
+.left-col {
+	width: 25%;
+}
