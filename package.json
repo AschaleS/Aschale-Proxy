@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "webpack --mode=production",
+    "react-dev": "webpack --mode=development",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
@@ -18,6 +20,22 @@
   },
   "homepage": "https://github.com/Zheng-Yi-Sao/Steven-Proxy#readme",
   "dependencies": {
-    "request": "^2.88.2"
+    "@babel/core": "^7.13.15",
+    "@babel/plugin-transform-modules-commonjs": "^7.14.0",
+    "@babel/plugin-transform-runtime": "^7.14.3",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/preset-react": "^7.13.13",
+    "css-loader": "^5.2.1",
+    "express": "^4.17.1",
+    "html-webpack-plugin": "^5.3.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "request": "^2.88.2",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.31.2",
+    "webpack-cli": "^4.6.0"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0"
   }
 }
