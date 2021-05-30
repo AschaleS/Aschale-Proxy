@@ -3,6 +3,7 @@ const app = express();
 const port = 3000;
 const path = require('path');
 const request = require('request');
+const dotenv = require('dotenv').config();
 
 app.use(express.static(path.join(__dirname, '/public/dist')));
 
@@ -11,7 +12,10 @@ const sendIndex = (req, res) => {
 };
 
 app.get('/user_image.png', (req, res) => {
-  request('http://localhost:3004/user_image.png').pipe(res);
+  let status = 200;
+  let response = request(`http://${dotenv.parsed.REVIEW_IP}:3004/user_image.png`);
+  response.on('error', console.error);
+  response.on('response', data => data.pipe(res));
 });
 
 
