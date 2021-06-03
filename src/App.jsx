@@ -11,23 +11,23 @@ class App extends React.Component {
 
   loadScript(ipname, param) {
     const script = document.createElement("script");
-    script.src = `http://${ipname}${param}`;
+    script.src = `${ipname}${param}`;
     script.async = true;
     document.body.appendChild(script);
   }
 
   componentDidMount () {
-    this.loadScript(this.infoIp, ':3001/information.js');
-    this.loadScript(this.overviewIp, ':3002/overview.js');
+    this.loadScript(this.infoIp, '/information.js');
+    this.loadScript(this.overviewIp, '/overview.js');
     this.loadScript(this.galleryS3, '/gallery.js');
-    this.loadScript(this.reviewIp, ':3004/customerreviews.js');
+    this.loadScript(this.reviewIp, '/customerreviews.js');
   }
 
   render() {
     return (<>
-    <link rel="stylesheet" type="text/css" href={`http://${this.infoIp}:3001/styles.css`} />
-    <link rel="stylesheet" type="text/css" href={`http://${this.overviewIp}:3002/stylesheet.css`} />
-    <link rel="stylesheet" type="text/css" href={`http://${this.reviewIp}:3004/style.css`} />
+    <link rel="stylesheet" type="text/css" href={`${this.infoIp}/styles.css`} />
+    <link rel="stylesheet" type="text/css" href={`${this.overviewIp}/stylesheet.css`} />
+    <link rel="stylesheet" type="text/css" href={`${this.reviewIp}/style.css`} />
 
     <header id="navbar">
       <nav id="top-nav">
