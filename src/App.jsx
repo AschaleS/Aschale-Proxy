@@ -5,7 +5,7 @@ class App extends React.Component {
     super(props);
     this.infoIp = env.INFO_IP || 'localhost';
     this.overviewIp = env.OVERVIEW_IP || 'localhost';
-    this.galleryIp = env.GALLERY_IP || 'localhost';
+    this.galleryS3 = env.GALLERY_S3 || 'localhost:3003';
     this.reviewIp = env.REVIEW_IP || 'localhost';
   }
 
@@ -19,7 +19,7 @@ class App extends React.Component {
   componentDidMount () {
     this.loadScript(this.infoIp, ':3001/information.js');
     this.loadScript(this.overviewIp, ':3002/overview.js');
-    this.loadScript(this.galleryIp, ':3003/gallery.js');
+    this.loadScript(this.galleryS3, '/gallery.js');
     this.loadScript(this.reviewIp, ':3004/customerreviews.js');
   }
 
