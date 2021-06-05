@@ -3,10 +3,10 @@ import React from 'react';
 class App extends React.Component {
   constructor (props) {
     super(props);
-    this.infoIp = env.INFO_IP || 'localhost';
-    this.overviewIp = env.OVERVIEW_IP || 'localhost';
+    this.infoIp = env.INFO_IP || 'localhost:3001';
+    this.overviewIp = env.OVERVIEW_IP || 'localhost:3002';
     this.galleryS3 = env.GALLERY_S3 || 'localhost:3003';
-    this.reviewIp = env.REVIEW_IP || 'localhost';
+    this.reviewIp = env.REVIEW_IP || 'localhost:3004';
   }
 
   loadScript(ipname, param) {
