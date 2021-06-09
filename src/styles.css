@@ -293,5 +293,6 @@ header li {
 
 /* !!! Temporary fix !!! */
 img.review-username_image {
-  background-image: url(https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png)
+  background-image: url(https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png);
+  background-size: contain;
 }
