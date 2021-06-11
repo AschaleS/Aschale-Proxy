@@ -33,10 +33,13 @@ const config = {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({template: './src/index.html'}),
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+      inject: false
+    }),
     new webpack.DefinePlugin({
       'env': JSON.stringify(dotenv.parsed)
-    })
+    }),
   ]
 };
 
