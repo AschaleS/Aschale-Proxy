@@ -291,8 +291,120 @@ header li {
 	width: 25%;
 }
 
-/* !!! Temporary fix !!! */
-img.review-username_image {
-  background-image: url(https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png);
-  background-size: contain;
+/* Footer stuff below */
+#navFooter {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  background-color: #232F3E;
+  min-width: 1000px;
+  position: relative;
+  color: white;
+  font-family: 'Amazon Ember', 'Arial', 'Verdana';
+  font-size: 14px;
+}
+
+#navFooter.navLeftFooter .navFooterBackToTop {
+  margin-bottom: 40px;
+  background-color: #37475A;
+  color: white;
+}
+
+#navFooter.navLeftFooter .navFooterBackToTop:focus, #navFooter.navLeftFooter .navFooterBackToTop:hover {
+  background-color: #485769;
+}
+
+#navFooter .navFooterBackToTop span {
+  display: block;
+  text-align: center;
+  padding: 15px 0;
+  line-height: 19px;
+  font-size: 13px;
+}
+
+.navFooterLinkCol {
+  display: table-cell;
+  padding: 0 10px;
+}
+
+.navFooterVerticalColumn {
+  margin: 0 auto;
+  max-width: 1000px;
+  display: table;
+}
+
+#navFooter.navLeftFooter .navFooterDescLine .navFooterMoreOnAmazon {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 0px;
+}
+
+#navFooter ul {
+  list-style-type: none;
+  color: white;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+#navFooter ul li {
+  margin: 0 0 10px;
+}
+
+.navFooterColHead {
+  font-weight: 700;
+  font-family: inherit;
+  font-size: 16px;
+  margin: 6px 0 14px 0;
+  white-space: nowrap;
+}
+
+#navFooter.navLeftFooter a.nav_a:link, #navFooter.navLeftFooter a.nav_a:visited, #navFooter.navLeftFooter li.nav_a_carat span.nav_a_carat {
+  color: #DDD;
+}
+
+
+
+
+.navFooterPadItemLine a, .navFooterPadItemLine span {
+  padding: 0 .6em;
+}
+
+.navFooterLine.navFooterLinkLine.navFooterPadItemLine.navFooterCopyright li {
+  display: inline;
+}
+
+#navFooter.navLeftFooter .navFooterCopyright {
+  background-color: #131A22;
+  max-width: 100%;
+  margin: 0;
+  padding: 10px 0 30px;
+  text-align: center;
+}
+
+#navFooter .navAccessibility.navFooterColSpacerInner, #navFooter .navAccessibility.navFooterLinkCol {
+  display: table-cell;
+  padding: 0 10px;
+}
+
+.navFooterVerticalColumn .navFooterColSpacerInner {
+  width: 10%;
+  padding: 0 15px;
+}
+
+#navFooter.navLeftFooter .navFooterDescLine {
+  background-color: #131A22;
+  padding: 30px 0;
+  margin: 30px 0 0;
+}
+
+#navFooter.navLeftFooter .navFooterDescText, #navFooter.navLeftFooter .nav_last {
+  color: #999;
+}
+
+.navFooterDescText {
+  font-size: 10px;
+  color: #767676;
+  line-height: 110%;
+  display: block;
+  margin-bottom: 1px;
 }
