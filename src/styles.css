@@ -293,6 +293,7 @@ header li {
 
 /* Footer stuff below */
 #navFooter {
+  all: revert;
   margin-bottom: 0;
   padding-bottom: 0;
   background-color: #232F3E;
@@ -304,6 +305,7 @@ header li {
 }
 
 #navFooter.navLeftFooter .navFooterBackToTop {
+  all: revert;
   margin-bottom: 40px;
   background-color: #37475A;
   color: white;
@@ -339,6 +341,7 @@ header li {
 }
 
 #navFooter ul {
+  all: revert;
   list-style-type: none;
   color: white;
   padding: 0;
