@@ -2,7 +2,7 @@
 
 > Reverse proxy to combine all of our services!
 
-[Proxy Image](/proxy%20deployed.png)
+![Proxy Image](/proxy%20deployed.PNG)
 ## Related Projects
 
   - https://github.com/Zheng-Yi-Sao/ProductInformation
