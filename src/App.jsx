@@ -4,10 +4,14 @@ import Footer from './Footer.jsx';
 class App extends React.Component {
   constructor (props) {
     super(props);
-    this.infoIp = env.INFO_IP || 'localhost:3001';
-    this.overviewIp = env.OVERVIEW_IP || 'localhost:3002';
-    this.galleryIp = env.GALLERY_IP || 'localhost:3003';
-    this.reviewIp = env.REVIEW_IP || 'localhost:3004';
+    // this.infoIp = env.INFO_IP || 'localhost:3001';
+    // this.overviewIp = env.OVERVIEW_IP || 'localhost:3002';
+    // this.galleryIp = env.GALLERY_IP || 'localhost:3003';
+    // this.reviewIp = env.REVIEW_IP || 'localhost:3004';
+    this.infoIp =  env.INFO_IP || 'http://localhost:3001';
+    this.overviewIp = 'http://localhost:3002';
+    this.galleryIp =  env.GALLERY_IP || 'http://localhost:3003';
+    this.reviewIp =  env.REVIEW_IP || 'http://localhost:3004';
   }
 
   loadScript(ipname, param) {
@@ -18,10 +22,10 @@ class App extends React.Component {
   }
 
   componentDidMount () {
-    this.loadScript(this.infoIp, '/information.js');
+    // this.loadScript(this.infoIp, '/information.js');
     this.loadScript(this.overviewIp, '/overview.js');
-    this.loadScript(this.galleryIp, '/gallery.js');
-    this.loadScript(this.reviewIp, '/customerreviews.js');
+    // this.loadScript(this.galleryIp, '/gallery.js');
+    // this.loadScript(this.reviewIp, '/customerreviews.js');
   }
 
   render() {
